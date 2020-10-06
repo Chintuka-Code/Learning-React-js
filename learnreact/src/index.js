@@ -12,11 +12,13 @@ const App = () => {
     <div>
       {/* assign a class name */}
       <h1 className="heading">Hello function components</h1>
+
       {/* inline style */}
       <label htmlFor="name" style={{ backgroundColor: 'red', color: 'blue' }}>
         {/* uSed variable */}
         {labelname}
       </label>
+
       <input id="name" type="text" />
     </div>
   );
