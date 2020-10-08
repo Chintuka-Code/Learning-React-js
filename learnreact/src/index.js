@@ -1,7 +1,7 @@
 // import react lib
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import Comment from './comment';
 // Create components
 
 // function components
@@ -9,21 +9,27 @@ import ReactDOM from 'react-dom';
 const App = () => {
   const labelname = 'Label for Name';
   return (
+    // <div>
+    //   {/* assign a class name */}
+    //   <h1 className="heading">Hello function components</h1>
+
+    //   {/* inline style */}
+    //   <label htmlFor="name" style={{ backgroundColor: 'red', color: 'blue' }}>
+    //     {/* uSed variable */}
+    //     {labelname}
+    //   </label>
+
+    //   <input id="name" type="text" />
+    // </div>
     <div>
-      {/* assign a class name */}
-      <h1 className="heading">Hello function components</h1>
-
-      {/* inline style */}
-      <label htmlFor="name" style={{ backgroundColor: 'red', color: 'blue' }}>
-        {/* uSed variable */}
-        {labelname}
-      </label>
-
-      <input id="name" type="text" />
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
     </div>
   );
 };
 
-// shoe react components
+// show react components
 
 ReactDOM.render(<App />, document.querySelector('#root'));
