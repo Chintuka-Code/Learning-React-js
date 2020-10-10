@@ -3,7 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Comment from './comment';
 import Approval from './approval';
-import Location from './Geolocation'
+// import Location from './Geolocation';
+import Life from './LifeCycle';
 // Create components
 
 // function components
@@ -42,7 +43,8 @@ const App = () => {
         <Comment author="Shubham" time="7.00" color="blue" />
       </Approval>
 
-      <Location/>
+      {/* <Location/> */}
+      <Life />
     </div>
   );
 };
