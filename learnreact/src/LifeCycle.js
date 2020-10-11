@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './index.css';
 const config = {
   winter: { sess: 'winter', icon: 'win' },
   summer: { sess: 'summer', icon: 'summer' },
@@ -15,25 +15,24 @@ class Life extends React.Component {
       (error) => this.setState({ errorMessage: error.message })
     );
     // access a object in diffrent way
-    const { session, icon } = config['winter'];
-    console.log(icon);
+    const { sess, icon } = config['winter'];
+    console.log(icon + sess);
+  }
+
+  // Avoid Conditional Render
+  helper() {
+    if (this.state.lat != null) {
+      return <h1>Latitude: {this.state.lat} </h1>;
+    } else return <h1>Error: {this.state.errorMessage} </h1>;
   }
 
   render() {
-    if (this.state.lat != null) {
-      return (
-        <div>
-          <h1>LifeCycle</h1>
-          <h1>Latitude: {this.state.lat} </h1>
-        </div>
-      );
-    } else
-      return (
-        <div>
-          <h1>LifeCycle</h1>
-          <h1>Error: {this.state.errorMessage} </h1>
-        </div>
-      );
+    return (
+      <div>
+        <h1>Life Cycle</h1>
+        {this.helper()}
+      </div>
+    );
   }
 }
 

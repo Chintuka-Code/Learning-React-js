@@ -10,4 +10,10 @@ const Comment = (props) => {
   );
 };
 
+Comment.defaultProps = {
+  author: 'sabban',
+  time: '4.00',
+  color: 'red',
+};
+
 export default Comment;

@@ -28,7 +28,7 @@ const App = () => {
       <h1>My first React Components With Props</h1>
 
       <Approval>
-        <Comment author="sabban" time="4.00" color="red" />
+        <Comment />
       </Approval>
 
       <Approval>
