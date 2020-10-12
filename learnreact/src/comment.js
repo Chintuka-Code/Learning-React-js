@@ -10,6 +10,8 @@ const Comment = (props) => {
   );
 };
 
+// Set Default Props
+
 Comment.defaultProps = {
   author: 'sabban',
   time: '4.00',

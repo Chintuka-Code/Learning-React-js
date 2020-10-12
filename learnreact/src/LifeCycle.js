@@ -15,7 +15,7 @@ class Life extends React.Component {
       (error) => this.setState({ errorMessage: error.message })
     );
     // access a object in diffrent way
-    const { sess, icon } = config['winter'];
+    const { sess, icon } = config['winter']; // access object
     console.log(icon + sess);
   }
 

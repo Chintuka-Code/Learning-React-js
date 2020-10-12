@@ -13,10 +13,19 @@ class Location extends React.Component {
     );
   }
 
+  // contentRender() {
+  //   if (this.state.lat != null) {
+  //     return <h1>Latitude: {this.state.lat} </h1>;
+  //   } else return <h1>Error: {this.state.errorMessage} </h1>;
+  // }
+
   render() {
-    if (this.state.lat != null) {
-      return <h1>Latitude: {this.state.lat} </h1>;
-    } else return <h1>Error: {this.state.errorMessage} </h1>;
+    return (
+      <div>
+        <h1> {this.props.name} </h1>
+        {/* {this.contentRender()} */}
+      </div>
+    );
   }
 }
 
